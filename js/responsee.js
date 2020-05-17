@@ -1,7 +1,7 @@
 /*
- * Responsee JS - v5 - 2018-03-23
+ * Responsee JS - v6 - 2019-06-27
  * https://www.myresponsee.com
- * Copyright 2018, Vision Design - graphic zoo
+ * Copyright 2019, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
 jQuery(document).ready(function($) {
@@ -76,7 +76,9 @@ jQuery(document).ready(function($) {
       $('.aside-nav > ul').toggleClass('show-menu', 'fast');
     });
   });  
-  //Responsee nav   
+  //Responsee nav
+  // Add nav-text before top-nav
+  $('.top-nav').before('<p class="nav-text"><span></span></p>');   
   $('.top-nav > ul > li ul').each(function(index, element) {
     var count = $(element).find('li').length;
     var content = '<span class="count-number"> ' + count + '</span>';
@@ -94,10 +96,10 @@ jQuery(document).ready(function($) {
     $('.top-nav ul ul li > ul').removeClass('show-ul', 'fast');  
     $('.top-nav ul ul li:hover > ul').toggleClass('show-ul', 'fast');   
   });
-  //Mobile aside navigation  
+  //Mobile navigation
   $('.nav-text').click(function() { 
-    $('.top-nav > ul').toggleClass('show-menu', 'fast');
-  }); 
+    $("body").toggleClass('show-menu');
+  });  
   //Custom forms
   $(function() {
     var input = document.createElement("input");

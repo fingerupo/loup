@@ -1,7 +1,7 @@
 /*
- * Components CSS - v5 - 2016-07-08
+ * Components CSS - v6 - 2016-07-08
  * https://www.myresponsee.com
- * Copyright 2018, Vision Design - graphic zoo
+ * Copyright 2019, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
 /* Tabs */
@@ -199,4 +199,7 @@ a.tooltip-content.tooltip-bottom,.tooltip-content.tooltip-bottom {
 }
 .button:hover > i {
   background: rgba(0, 0, 0, 0.06) none repeat scroll 0 0;
+}
+.grid .button {
+    width: 100%;
 }
